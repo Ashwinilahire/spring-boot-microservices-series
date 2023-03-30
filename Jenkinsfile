@@ -16,7 +16,7 @@ pipeline {
         stage('Build'){
             steps{
                 echo 'Building .......'
-               sh ' ./mvn dependency:resolve-plugins'
+               sh 'mvn dependency:resolve-plugins'
                 sh './mvnw clean package -DskipTests=true'
             }
         }
