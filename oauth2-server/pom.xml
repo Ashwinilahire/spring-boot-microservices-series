@@ -76,6 +76,9 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <classifier>exec</classifier>
+                     <source>${java.version}</source>
+                <target>${java.version}</target>
+                <debug>true</debug>     
                 </configuration>
                 <executions>
                     <execution>
