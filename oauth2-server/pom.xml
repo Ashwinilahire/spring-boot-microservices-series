@@ -21,6 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.M8</spring-cloud.version>
     </properties>
 
@@ -76,9 +77,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <classifier>exec</classifier>
-                     <source>${java.version}</source>
-                <target>${java.version}</target>
-                <debug>true</debug>     
                 </configuration>
                 <executions>
                     <execution>
