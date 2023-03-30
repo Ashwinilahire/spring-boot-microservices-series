@@ -76,6 +76,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                         <verbose>true</verbose>   
+                         <fork>true</fork>
+                         <executable>${env.JAVA_1_8_HOME}/bin/javac</executable>
+                         <compilerVersion>1.8</compilerVersion>
                     <classifier>exec</classifier>
                 </configuration>
                 <executions>
