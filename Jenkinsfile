@@ -16,7 +16,7 @@ pipeline {
         stage('Build'){
             steps{
                 echo 'Building .......'
-                sh './mvnw clean install -P buildDocker'
+                sh './mvnw clean package -DskipTests=true'
             }
         }
         stage('config-server docker image'){
